@@ -40,7 +40,7 @@ class PyTest(TestCommand):
 
 setup(
     name='pyembed-mustache',
-    version='0.6.0',
+    version='0.6.1',
     author='Matt Thomson',
     author_email='matt.thomson@cantab.net',
     url='https://github.com/pyembed/pyembed-mustache',
