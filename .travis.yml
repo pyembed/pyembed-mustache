@@ -11,11 +11,11 @@ script:
 - coverage report --fail-under=100
 deploy:
   provider: pypi
+  user:
+    secure: TrNX8WHlyfmj8aJfH6coB89SQiMJIHK33KH7Jtin7hPSCAjq2E5Cl9rK+jp5p9sllfEO4Ec8Cz5qmjD7ziQe3aqy92i+9vtsiaAvVE9yOLWbo27UZLxdf/cOUiAOIwQJ/LCfETjP75abUfhskb2DSB9Tl6IvWBh5PCji4K+QBm4=
+  password:
+    secure: RqrfUlEOUmqUWTI6BbVw0O7Jo9lrmp7ZxMrsFTEjGmTzPKu/wWrHkIN11ImIN6A95AbHujYKcFLj3CQ0r3o9X3IFwQtMnFn6Yd7zGg39rfDO1esTxm5i0tJhshaTpIY4GrhF3e/DfHWFjA4DdtUyOmdTbTSzLila0aKWKkkehj4=
   on:
     python: 2.7
     tags: true
-    repo: pyembed/pyembed-render-mustache
-  user:
-    secure: YCZG6t6/86rSREHVxktiA05auKliwofIEQDKtjv4iGSLLxjpdupoIHaV4KcgwKmVgpLKo9YIeubCnpTkMGluGnFj3/DYQzvpzsy4j3NAoXD+r7Kq4/r6y63gcPvhhdJevDQOJXLPCONj2PX6/ReT3S0jutHOqh2B1fTwtJIFoPE=
-  password:
-    secure: N0RKXZxuu1052hJaA5EQIbtUBHkntBe9OLrQKj+QWP7Yr/qib0/jG44udkiPaMEKhJ5feSGPFVFdH0ZjRqV9CkLJ/smHobNDmGkcUYZP10WPtSe4PWpt88a5Rj8RW9jxrnT56elz/VrYZNLPrNd2GaNWrJPFLBYxyk93nx7TKZ4=
+    repo: pyembed/pyembed-mustache

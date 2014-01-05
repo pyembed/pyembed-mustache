@@ -1,6 +1,6 @@
 [run]
 include =
-  pyembed/render/mustache/*.py
+  pyembed/mustache/*.py
 
 omit =
-  pyembed/render/mustache/test/*.py
+  pyembed/mustache/test/*.py

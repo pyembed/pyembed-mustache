@@ -39,23 +39,23 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(
-    name='pyembed-render-mustache',
+    name='pyembed-mustache',
     version='0.6.0',
     author='Matt Thomson',
     author_email='matt.thomson@cantab.net',
-    url='https://github.com/pyembed/pyembed-render-mustache',
+    url='https://github.com/pyembed/pyembed-mustache',
     description='PyEmbed plugin for rendering embeddings using Mustache templates',
     long_description=open('README.rst').read() + '\n\n' +
         open('CHANGES.rst').read(),
-    download_url='https://pypi.python.org/pypi/pyembed-render-mustache/',
+    download_url='https://pypi.python.org/pypi/pyembed-mustache/',
     license=open('LICENSE.txt').read(),
 
-    provides=['pyembed.render.mustache'],
-    packages=['pyembed.render.mustache'],
-    namespace_packages=['pyembed', 'pyembed.render'],
+    provides=['pyembed.mustache'],
+    packages=['pyembed.mustache'],
+    namespace_packages=['pyembed'],
 
     package_data={
-        "pyembed.render.mustache": [
+        "pyembed.mustache": [
             "templates/*.mustache"
         ]
     },

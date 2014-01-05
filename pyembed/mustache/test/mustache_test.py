@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from pyembed.render.mustache import MustacheRenderer
+from pyembed.mustache import MustacheRenderer
 from pyembed.core import response
 
 from hamcrest import assert_that, equal_to
@@ -89,7 +89,7 @@ def test_should_embed_with_template():
 
     oembed_response = response.OEmbedVideoResponse(
         create_value_function(values))
-    renderer = MustacheRenderer('pyembed/render/mustache/test/fixtures')
+    renderer = MustacheRenderer('pyembed/mustache/test/fixtures')
     embedding = renderer.render('http://example.com', oembed_response)
 
     assert_that(embedding, equal_to(
@@ -104,7 +104,7 @@ def test_should_use_default_embedding_if_no_template():
 
     oembed_response = response.OEmbedRichResponse(
         create_value_function(values))
-    renderer = MustacheRenderer('pyembed/render/mustache/test/fixtures')
+    renderer = MustacheRenderer('pyembed/mustache/test/fixtures')
 
     assert_that(
         renderer.render('http://example.com', oembed_response),

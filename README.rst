@@ -1,14 +1,14 @@
-PyEmbed-Render-Mustache
+PyEmbed-Mustache
 ===============
 
-.. image:: https://secure.travis-ci.org/pyembed/pyembed-render-mustache.png?branch=master
-    :target: http://travis-ci.org/pyembed/pyembed-render-mustache
-.. image:: https://coveralls.io/repos/pyembed/pyembed-render-mustache/badge.png
-    :target: https://coveralls.io/r/pyembed/pyembed-render-mustache
-.. image:: https://pypip.in/v/pyembed-render-mustache/badge.png
-    :target: https://crate.io/packages/pyembed-render-mustache/
-.. image:: https://pypip.in/d/pyembed-render-mustache/badge.png
-    :target: https://crate.io/packages/pyembed-render-mustache/
+.. image:: https://secure.travis-ci.org/pyembed/pyembed-mustache.png?branch=master
+    :target: http://travis-ci.org/pyembed/pyembed-mustache
+.. image:: https://coveralls.io/repos/pyembed/pyembed-mustache/badge.png
+    :target: https://coveralls.io/r/pyembed/pyembed-mustache
+.. image:: https://pypip.in/v/pyembed-mustache/badge.png
+    :target: https://crate.io/packages/pyembed-mustache/
+.. image:: https://pypip.in/d/pyembed-mustache/badge.png
+    :target: https://crate.io/packages/pyembed-mustache/
 
 PyEmbed plugin for rendering embeddings using Mustache templates.
 
@@ -34,27 +34,27 @@ instead.
 Compatibility
 -------------
 
-PyEmbed-Render-Mustache has been tested with Python 2.7 and 3.3.
+PyEmbed-Mustache has been tested with Python 2.7 and 3.3.
 
 Installation
 ------------
 
-PyEmbed-Render-Mustache can be installed using pip:
+PyEmbed-Mustache can be installed using pip:
 
 ::
 
-    pip install pyembed-render-mustache
+    pip install pyembed-mustache
 
 Contributing
 ------------
 
 To report an issue, request an enhancement, or contribute a patch, go to
-the PyEmbed-Render-Mustache `GitHub`_ page.
+the PyEmbed-Mustache `GitHub`_ page.
 
 License
 -------
 
-PyEmbed-Render-Mustache is distributed under the MIT license.
+PyEmbed-Mustache is distributed under the MIT license.
 
     Copyright (c) 2013 Matt Thomson
 
@@ -77,4 +77,4 @@ PyEmbed-Render-Mustache is distributed under the MIT license.
     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-.. _GitHub: https://github.com/pyembed/pyembed-render-mustache
+.. _GitHub: https://github.com/pyembed/pyembed-mustache
