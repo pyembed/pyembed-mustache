@@ -15,5 +15,7 @@ deploy:
     python: 2.7
     tags: true
     repo: pyembed/pyembed-render-mustache
+  user:
+    secure: YCZG6t6/86rSREHVxktiA05auKliwofIEQDKtjv4iGSLLxjpdupoIHaV4KcgwKmVgpLKo9YIeubCnpTkMGluGnFj3/DYQzvpzsy4j3NAoXD+r7Kq4/r6y63gcPvhhdJevDQOJXLPCONj2PX6/ReT3S0jutHOqh2B1fTwtJIFoPE=
   password:
     secure: N0RKXZxuu1052hJaA5EQIbtUBHkntBe9OLrQKj+QWP7Yr/qib0/jG44udkiPaMEKhJ5feSGPFVFdH0ZjRqV9CkLJ/smHobNDmGkcUYZP10WPtSe4PWpt88a5Rj8RW9jxrnT56elz/VrYZNLPrNd2GaNWrJPFLBYxyk93nx7TKZ4=
