@@ -1,0 +1,6 @@
+[run]
+include =
+  pyembed/render/mustache/*.py
+
+omit =
+  pyembed/render/mustache/test/*.py

@@ -1,0 +1,19 @@
+language: python
+python:
+- '2.7'
+- '3.3'
+install:
+- pip install -e .
+- pip install coverage coveralls
+script:
+- coverage run setup.py test
+- coveralls
+- coverage report --fail-under=100
+deploy:
+  provider: pypi
+  on:
+    python: 2.7
+    tags: true
+    repo: pyembed/pyembed-render-mustache
+  password:
+    secure: N0RKXZxuu1052hJaA5EQIbtUBHkntBe9OLrQKj+QWP7Yr/qib0/jG44udkiPaMEKhJ5feSGPFVFdH0ZjRqV9CkLJ/smHobNDmGkcUYZP10WPtSe4PWpt88a5Rj8RW9jxrnT56elz/VrYZNLPrNd2GaNWrJPFLBYxyk93nx7TKZ4=
