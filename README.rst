@@ -5,12 +5,18 @@ PyEmbed-Mustache
     :target: http://travis-ci.org/pyembed/pyembed-mustache
 .. image:: https://coveralls.io/repos/pyembed/pyembed-mustache/badge.png
     :target: https://coveralls.io/r/pyembed/pyembed-mustache
-.. image:: https://pypip.in/v/pyembed-mustache/badge.png
-    :target: https://crate.io/packages/pyembed-mustache/
 .. image:: https://pypip.in/d/pyembed-mustache/badge.png
-    :target: https://crate.io/packages/pyembed-mustache/
+    :target: https://pypi.python.org/pypi/pyembed-mustache/
+.. image:: https://pypip.in/v/pyembed-mustache/badge.png
+    :target: https://pypi.python.org/pypi/pyembed-mustache/
+.. image:: https://pypip.in/wheel/pyembed-mustache/badge.png
+    :target: https://pypi.python.org/pypi/pyembed-mustache/
+.. image:: https://pypip.in/egg/pyembed-mustache/badge.png
+    :target: https://pypi.python.org/pypi/pyembed-mustache/
+.. image:: https://pypip.in/license/pyembed-mustache/badge.png
+    :target: https://pypi.python.org/pypi/pyembed-mustache/
 
-PyEmbed plugin for rendering embeddings using Mustache templates.
+`PyEmbed`_ plugin for rendering embeddings using `Mustache`_ templates.
 
 Usage
 -----
@@ -30,6 +36,8 @@ where `path` is the path to a directory containing Mustache templates:
 
 If you don't supply one of these files, a default embedding will be used
 instead.
+
+For more information, see the `PyEmbed`_ website.
 
 Compatibility
 -------------
@@ -77,4 +85,6 @@ PyEmbed-Mustache is distributed under the MIT license.
     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+.. _PyEmbed: http://pyembed.github.io
+.. _Mustache: http://mustache.github.io
 .. _GitHub: https://github.com/pyembed/pyembed-mustache
