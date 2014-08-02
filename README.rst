@@ -1,5 +1,5 @@
 PyEmbed-Mustache
-===============
+================
 
 .. image:: https://secure.travis-ci.org/pyembed/pyembed-mustache.png?branch=master
     :target: http://travis-ci.org/pyembed/pyembed-mustache
@@ -42,7 +42,7 @@ For more information, see the `PyEmbed`_ website.
 Compatibility
 -------------
 
-PyEmbed-Mustache has been tested with Python 2.7 and 3.3.
+PyEmbed-Mustache has been tested with Python 2.7, 3.3 and 3.4.
 
 Installation
 ------------

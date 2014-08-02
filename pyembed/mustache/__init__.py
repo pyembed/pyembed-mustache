@@ -20,9 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from pyembed.core.render import PyEmbedRenderer
-
 import os
+
+from pyembed.core.render import PyEmbedRenderer
 from pkg_resources import resource_string
 from pystache import Renderer
 
