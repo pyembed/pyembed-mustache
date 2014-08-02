@@ -20,12 +20,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from pyembed.mustache import MustacheRenderer
 from pyembed.core import response
 
 from hamcrest import assert_that, equal_to
-from mock import Mock
-import pytest
+
+from pyembed.mustache import MustacheRenderer
 
 
 def test_default_embed_photo():
