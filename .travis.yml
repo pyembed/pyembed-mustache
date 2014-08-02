@@ -2,15 +2,17 @@ language: python
 python:
 - '2.7'
 - '3.3'
+- '3.4'
 install:
 - pip install -e .
-- pip install coverage coveralls
+- pip install coverage coveralls wheel
 script:
 - coverage run setup.py test
 - coveralls
 - coverage report --fail-under=100
 deploy:
   provider: pypi
+  distributions: "sdist bdist_wheel"
   user:
     secure: TrNX8WHlyfmj8aJfH6coB89SQiMJIHK33KH7Jtin7hPSCAjq2E5Cl9rK+jp5p9sllfEO4Ec8Cz5qmjD7ziQe3aqy92i+9vtsiaAvVE9yOLWbo27UZLxdf/cOUiAOIwQJ/LCfETjP75abUfhskb2DSB9Tl6IvWBh5PCji4K+QBm4=
   password:
