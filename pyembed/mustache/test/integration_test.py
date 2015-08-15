@@ -21,7 +21,6 @@
 # THE SOFTWARE.
 
 from pyembed.core import PyEmbed
-from hamcrest import assert_that, equal_to
 
 from pyembed.mustache import MustacheRenderer
 
@@ -30,6 +29,6 @@ def test_should_embed_with_mustache_template():
     renderer = MustacheRenderer('pyembed/mustache/test/fixtures')
     embedding = PyEmbed(renderer=renderer).embed(
         'http://www.youtube.com/watch?v=qrO4YZeyl0I')
-    assert_that(embedding, equal_to(
-        'Lady Gaga - Bad Romance by LadyGagaVEVO from ' +
-        'http://www.youtube.com/watch?v=qrO4YZeyl0I'))
+    assert embedding == \
+        'Lady Gaga - Bad Romance by LadyGagaVEVO from ' + \
+        'http://www.youtube.com/watch?v=qrO4YZeyl0I'

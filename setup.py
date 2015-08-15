@@ -65,7 +65,6 @@ setup(
         'pystache'
     ],
     tests_require=[
-        'PyHamcrest',
         'mock',
         'pytest'
     ],
