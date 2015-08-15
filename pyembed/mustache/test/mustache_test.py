@@ -34,7 +34,8 @@ def test_default_embed_photo():
 
     oembed_response = response.OEmbedPhotoResponse(
         create_value_function(values))
-    assert MustacheRenderer('.').render('http://example.com', oembed_response) == \
+    renderer = MustacheRenderer('.')
+    assert renderer.render('http://example.com', oembed_response) == \
         '<img src="http://example.com/bees.jpg" width="300" height="200" />'
 
 
@@ -46,7 +47,9 @@ def test_default_embed_video():
 
     oembed_response = response.OEmbedVideoResponse(
         create_value_function(values))
-    assert MustacheRenderer('.').render('http://example.com', oembed_response) == embedding
+    assert MustacheRenderer('.').render(
+        'http://example.com',
+        oembed_response) == embedding
 
 
 def test_default_embed_rich():
@@ -57,7 +60,9 @@ def test_default_embed_rich():
 
     oembed_response = response.OEmbedRichResponse(
         create_value_function(values))
-    assert MustacheRenderer('.').render('http://example.com', oembed_response) == embedding
+    assert MustacheRenderer('.').render(
+        'http://example.com',
+        oembed_response) == embedding
 
 
 def test_default_embed_link():
@@ -66,16 +71,18 @@ def test_default_embed_link():
 
     oembed_response = response.OEmbedLinkResponse(
         create_value_function(values))
-    assert MustacheRenderer('.').render('http://example.com', oembed_response) == \
-        '<a href="http://example.com">Bees!</a>'
+    assert MustacheRenderer('.').render(
+        'http://example.com',
+        oembed_response) == '<a href="http://example.com">Bees!</a>'
 
 
 def test_should_embed_with_template():
-    values = {'type': 'video',
-              'version': '1.0',
-              'html': '<iframe src="http://www.example.com/bees.mpg"></iframe>',
-              'title': 'Bees',
-              'author_name': 'Ian Bees'}
+    values = {
+        'type': 'video',
+        'version': '1.0',
+        'html': '<iframe src="http://www.example.com/bees.mpg"></iframe>',
+        'title': 'Bees',
+        'author_name': 'Ian Bees'}
 
     oembed_response = response.OEmbedVideoResponse(
         create_value_function(values))

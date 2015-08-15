@@ -26,7 +26,8 @@ from pyembed.mustache import MustacheRenderer
 import vcr
 
 
-@vcr.use_cassette('pyembed/mustache/test/fixtures/cassettes/embed_template.yml')
+@vcr.use_cassette(
+    'pyembed/mustache/test/fixtures/cassettes/embed_template.yml')
 def test_should_embed_with_mustache_template():
     renderer = MustacheRenderer('pyembed/mustache/test/fixtures')
     embedding = PyEmbed(renderer=renderer).embed(

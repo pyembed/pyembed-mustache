@@ -6,8 +6,9 @@ python:
 - '3.4'
 install:
 - pip install -e .
-- pip install coverage coveralls wheel
+- pip install coverage coveralls flake8 wheel
 script:
+- flake8
 - coverage run setup.py test
 - coveralls
 - coverage report --fail-under=100
