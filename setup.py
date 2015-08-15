@@ -44,7 +44,8 @@ setup(
     author='Matt Thomson',
     author_email='mattjohnthomson@gmail.com',
     url='http://pyembed.github.io',
-    description='PyEmbed plugin for rendering embeddings using Mustache templates',
+    description='PyEmbed plugin for rendering embeddings using Mustache ' +
+        'templates',
     long_description=open('README.rst').read() + '\n\n' +
         open('CHANGES.rst').read(),
     download_url='https://pypi.python.org/pypi/pyembed-mustache/',
